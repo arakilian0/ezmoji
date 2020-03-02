@@ -9,7 +9,7 @@
     <h1>:smile: Hello World</h1>
 <div>
 ```
-:arrow_up_small: would become  :arrow_down_small:
+The code above would become the following:
 ```html
 <div>
     <h1>😄 Hello World</h1>
@@ -19,5 +19,5 @@
 ### Note
 *A list of emojis that are currently not supported*
 - People
-    - :bowtie:
-    - :relaxed:
+    - :bowtie: bowtie
+    - :relaxed: relaxed
