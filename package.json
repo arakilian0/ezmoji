@@ -3,7 +3,10 @@
   "version": "0.3.0",
   "description": "GitHub style emojis for HTML",
   "main": "",
-  "scripts": {},
+  "scripts": {
+    "start": "gulp",
+    "compress": "gulp compress"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arakilian0/ezmoji.git"
@@ -17,5 +20,30 @@
   "bugs": {
     "url": "https://github.com/arakilian0/ezmoji/issues"
   },
-  "homepage": "https://github.com/arakilian0/ezmoji#readme"
+  "homepage": "https://github.com/arakilian0/ezmoji#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "readable-stream": "^3.6.0"
+  },
+  "config": {
+    "name": {
+      "domain": "ezmoji",
+      "prod": ".min",
+      "ext": ".js"
+    },
+    "browserSync": {
+      "server": "./",
+      "open": true,
+      "notify": false,
+      "logPrefix": "ezmoji v0.3.0",
+      "logLevel": "debug",
+      "logFileChanges": true,
+      "logConnections": true,
+      "port": 3000,
+      "ui": { "port": 3030 }
+    }
+  }
 }

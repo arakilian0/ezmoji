@@ -1,8 +1,9 @@
 /*!
- *  Ezmoji v0.3.0 
- *  (c) 2014-2019 Evan You
- *  Released under the MIT License.
+ * Ezmoji v0.3.0 
+ * (c) 2020 Michael Arakilian
+ * Released under the MIT License.
  */
+
 var ezcheck,
     ezmojis,
     ezmsg = '...';
@@ -325,7 +326,7 @@ ezmojis = {
 };
 
 ezcheck = function(node) {
-    for (const emoji in ezmojis) {
+    for (var emoji in ezmojis) {
         if(node.innerText.includes(ezmojis[emoji].code)) {
             var nstr = node.innerText.replace(ezmojis[emoji].code, ezmojis[emoji].emoji);
             return node.innerText = nstr;

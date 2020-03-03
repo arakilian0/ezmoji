@@ -2,12 +2,16 @@
 
 ## GitHub style emojis for HTML
 
-### Install
+### **Install**
 ```html
+<!-- development version -->
 <script defer src="https://ezmoji.arakilian0.com/ezmoji.js"></script>
 ```
-
-### Usage
+```html
+<!-- production version -->
+<script defer src="https://ezmoji.arakilian0.com/ezmoji.min.js"></script>
+```
+### **Usage**
 ```html
 <div>
     <h1>:smile: Hello World</h1>
@@ -20,7 +24,24 @@ The code above would become the following:
 <div>
 ```
 
-### Note
+### **Build it yourself**
+```
+git clone https://github.com/arakilian0/ezmoji.git
+```
+```
+cd ezmoji
+```
+```
+npm install
+```
+```
+npm run start
+```
+```
+npm run compress
+```
+
+### **Note**
 *A list of emojis that are currently **not supported**:*
 - People
     - bowtie
@@ -42,7 +63,7 @@ The code above would become the following:
     - octocat
     - squirrel
 
-### License 
+### **License**
 MIT License
 
 Copyright (c) 2019 Michael Arakilian
