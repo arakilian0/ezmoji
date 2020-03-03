@@ -4,11 +4,11 @@
 
 ### **Install**
 ```html
-<!-- development version -->
+<!-- source -->
 <script defer src="https://ezmoji.arakilian0.com/ezmoji.js"></script>
 ```
 ```html
-<!-- production version -->
+<!-- minified -->
 <script defer src="https://ezmoji.arakilian0.com/ezmoji.min.js"></script>
 ```
 ### **Usage**
