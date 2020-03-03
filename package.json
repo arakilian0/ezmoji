@@ -24,16 +24,12 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "readable-stream": "^3.6.0"
   },
   "config": {
-    "name": {
-      "domain": "ezmoji",
-      "prod": ".min",
-      "ext": ".js"
-    },
     "browserSync": {
       "server": "./",
       "open": true,
@@ -43,7 +39,9 @@
       "logFileChanges": true,
       "logConnections": true,
       "port": 3000,
-      "ui": { "port": 3030 }
+      "ui": {
+        "port": 3030
+      }
     }
   }
 }
