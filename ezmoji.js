@@ -1,8 +1,8 @@
 /*!
- *   Ezmoji v0.3.0 
- *   (c) 2014-2019 Evan You
- *   Released under the MIT License.
-*/
+ *  Ezmoji v0.3.0 
+ *  (c) 2014-2019 Evan You
+ *  Released under the MIT License.
+ */
 var ezcheck,
     ezmojis,
     ezmsg = '...';
