@@ -1,8 +1,7 @@
 # :zzz: ezmoji
+### GitHub style [:emojis:](https://gist.github.com/rxaviers/7360908) for HTML 
 
-## GitHub style emojis for HTML
-
-### **Install**
+## **Install**
 ```html
 <!-- source -->
 <script defer src="https://ezmoji.arakilian0.com/ezmoji.js"></script>
@@ -11,7 +10,7 @@
 <!-- minified -->
 <script defer src="https://ezmoji.arakilian0.com/ezmoji.min.js"></script>
 ```
-### **Usage**
+## **Usage**
 ```html
 <div>
     <h1>:smile: Hello World</h1>
@@ -23,8 +22,9 @@ The code above would become the following:
     <h1>😄 Hello World</h1>
 <div>
 ```
+[Check out all the available emojis!](https://ezmoji.arakilian0.com)
 
-### **Build it yourself**
+## **Build it yourself**
 ```
 git clone https://github.com/arakilian0/ezmoji.git
 ```
@@ -41,7 +41,7 @@ npm run start
 npm run compress
 ```
 
-### **Note**
+## **Note**
 *A list of emojis that are currently **not supported**:*
 - People
     - bowtie
@@ -63,7 +63,7 @@ npm run compress
     - octocat
     - squirrel
 
-### **License**
+## **License**
 MIT License
 
 Copyright (c) 2019 Michael Arakilian
