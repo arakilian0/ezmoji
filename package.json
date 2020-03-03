@@ -1,0 +1,21 @@
+{
+  "name": "ezmoji",
+  "version": "0.2.0",
+  "description": "GitHub style emojis for HTML",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arakilian0/ezmoji.git"
+  },
+  "keywords": [
+    "html",
+    "emojis"
+  ],
+  "author": "Michael Arakilian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arakilian0/ezmoji/issues"
+  },
+  "homepage": "https://github.com/arakilian0/ezmoji#readme"
+}
