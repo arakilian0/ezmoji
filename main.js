@@ -1,12 +1,4 @@
-/*!
- * Ezmoji v0.4.0 
- * (c) 2020 Michael Arakilian
- * Released under the MIT License.
- */
-
-var ezcheck,
-    ezmojis,
-    ezmsg = '...';
+var ezmsg = '...';
 
 var ezmojis = {
 
@@ -324,27 +316,15 @@ var ezmojis = {
     squirrel: { code: ':squirrel:', emoji: ezmsg, available: false }  
 };
 
-ezcheck = function(node) {
-    for (var emoji in ezmojis) {
-        if(node.innerText.includes(ezmojis[emoji].code)) {
-            var nstr = node.innerHTML.replace(
-                ezmojis[emoji].code, 
-                ezmojis[emoji].emoji
-            );
-            return node.innerHTML = nstr;
+new Vue({
+    el: '#app',
+    data: {
+        test: 'hello world',
+        emojis: ezmojis
+    },
+    methods: {
+        doSomething: function() {
+            console.log(this.emojis);
         }
-    };
-};
-
-function ezinit(node) {
-    var nodes = node.childNodes;
-    for (var i = 0; i < nodes.length; i++) {
-        if(!nodes[i]) { continue };
-        if(nodes[i].childNodes.length > 0) {
-            ezinit(nodes[i]);
-            ezcheck(nodes[i]);
-        };
-    };
-};
-
-window.addEventListener("load", ezinit(document));
+    }
+});
