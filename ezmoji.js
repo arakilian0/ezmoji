@@ -3,6 +3,7 @@ var ezcheck,
     ezmsg = '...';
 
 ezmojis = {
+
     // People
     bowtie: { code: ':bowtie:', emoji: ezmsg },
     smile: { code: ':smile:', emoji: '😄' },
@@ -315,6 +316,7 @@ ezmojis = {
     partly_sunny: { code: ':partly_sunny:', emoji: '⛅️' },
     octocat: { code: ':octocat:', emoji: ezmsg },
     squirrel: { code: ':squirrel:', emoji: ezmsg }
+    
 };
 
 ezcheck = function(node) {
