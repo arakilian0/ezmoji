@@ -4,7 +4,7 @@
 
 ### Install
 ```html
-<script defer src="https://ezmoji.arakilian0.com/ezmoji.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/arakilian0/ezmoji/ezmoji.js"></script>
 ```
 
 ### Usage
