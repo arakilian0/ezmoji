@@ -38,6 +38,9 @@ The code above would become the following:
     - rage4
     - suspect
     - trollface
+- Nature
+    - octocat
+    - squirrel
 
 ### License 
 MIT License
