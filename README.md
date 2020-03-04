@@ -1,5 +1,7 @@
 # :zzz: ezmoji
-### GitHub style [:emojis:](https://gist.github.com/rxaviers/7360908) for HTML 
+### GitHub style [:emojis:](https://gist.github.com/rxaviers/7360908) for HTML
+
+![alt text](https://raw.githubusercontent.com/arakilian0/images/master/ezmoji-home.png "Ezmoji use case")
 
 ## **Install**
 ```html
