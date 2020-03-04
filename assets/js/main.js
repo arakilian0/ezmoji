@@ -328,3 +328,18 @@ new Vue({
         }
     }
 });
+
+var clipboard = new ClipboardJS('.copy-btn');
+
+clipboard.on('success', function(e) {
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+    Swal.fire({
+        position: 'top-end',
+        title: 'Copied ' + e.text,
+        showConfirmButton: false,
+        timer: 1500
+      })
+    e.clearSelection();
+});

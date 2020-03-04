@@ -22,9 +22,14 @@
         
         <main>
             <ul>
-                <li v-for="(emoji, idx) in emojis" :key="emoji.code" v-if="emoji.available !== false">
+                <li 
+                    v-for="(emoji, name) in emojis" 
+                    :key="name" 
+                    v-if="emoji.available !== false" 
+                    class="copy-btn"
+                    :data-clipboard-target="'#'+name">
                     <template>
-                        {{ emoji.emoji }} <span>{{ emoji.code }}</span>
+                        {{ emoji.emoji }} <span :id="name">{{ emoji.code }}</span>
                     </template>
                 </li>
             </ul>
@@ -33,6 +38,8 @@
     
     <script defer src="/ezmoji.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script defer src="/assets/js/main.min.js"></script>
 </body>
 </html>
