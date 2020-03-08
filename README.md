@@ -1,8 +1,6 @@
 # :zzz: ezmoji
 ### GitHub style [:emojis:](https://gist.github.com/rxaviers/7360908) for HTML
 
-![alt text](https://raw.githubusercontent.com/arakilian0/images/master/ezmoji-home.png "Ezmoji use case")
-
 ## **Install**
 ```html
 <!-- source -->
@@ -55,7 +53,7 @@ npm run compress
     - goberserk
     - godmode
     - hurtrealbad
-    - rage1 
+    - rage1
     - rage2
     - rage3
     - rage4
