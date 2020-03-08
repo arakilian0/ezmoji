@@ -1,5 +1,3 @@
-"use strict";
-
 var ezmsg = '...';
 var ezmojis = [
 
@@ -881,7 +879,6 @@ var ezmojis = [
     { code: ':small_red_triangle_down:', emoji: '🔻', group: 'Symbols' },
     { code: ':shipit:', emoji: ezmsg, group: 'Symbols', available: false }
 ];
-
 
 new Vue({
     el: '#app',

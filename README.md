@@ -1,4 +1,4 @@
-# :zzz: ezmoji
+# ezmoji
 ### GitHub style [:emojis:](https://gist.github.com/rxaviers/7360908) for HTML
 
 ## **Install**

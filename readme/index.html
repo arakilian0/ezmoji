@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ezmoji</title>
+    <title>Ezmoji Readme</title>
     <meta name="description" content="something">
     <meta name="keywords" content="Some, Keywords, Go Here">
     <meta name="author" content="Michael Arakilian">
@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
@@ -22,11 +22,27 @@
         <nav><input type="text" placeholder="Search..."><a href="/readme">Readme</a><a href="/license">License</a></nav>
     </header>
     <main>
-        <h1>Gulpify!</h1>
+        <zero-md src="/README.md">
+            <template>
+                <style>
+                    * {
+                        color: #ccc !important;
+                    }
+
+                    pre {
+                        background: var(--header);
+                        border-radius: 4px;
+                        padding: 10px 8px;
+                    }
+                </style>
+            </template>
+        </zero-md>
     </main>
-    <script defer src="./assets/js/vue/vue.js"></script>
-    <script defer src="./assets/js/main.js"></script>
-    <script defer src="./ezmoji.js"></script>
+    <script defer src="../assets/js/vue/vue.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <script defer type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../ezmoji.js"></script>
 </body>
 
 </html>

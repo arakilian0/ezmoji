@@ -24,7 +24,9 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
+    "gulp-beautify": "^3.0.0",
     "gulp-csso": "^4.0.1",
+    "gulp-pug": "^4.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "readable-stream": "^3.6.0"
@@ -41,6 +43,60 @@
       "port": 3000,
       "ui": {
         "port": 3030
+      }
+    },
+    "pug": {
+      "index": {
+        "data": {
+          "title": "Ezmoji",
+          "description": "something",
+          "keywords": "Some, Keywords, Go Here",
+          "author": "Michael Arakilian",
+          "styles": [
+            "/assets/css/style.css"
+          ],
+          "scripts": [
+            "./assets/js/vue/vue.js",
+            "./assets/js/main.js",
+            "./ezmoji.js"
+          ]
+        }
+      },
+      "license": {
+        "data": {
+          "title": "Ezmoji License",
+          "description": "something",
+          "keywords": "Some, Keywords, Go Here",
+          "author": "Michael Arakilian",
+          "styles": [
+            "../assets/css/style.css"
+          ],
+          "scripts": [
+            "../assets/js/vue/vue.js",
+            "https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js",
+            "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js",
+            "../assets/js/main.js",
+            "../ezmoji.js"
+          ]
+        }
+      },
+      "readme": {
+        "data": {
+          "title": "Ezmoji Readme",
+          "description": "something",
+          "keywords": "Some, Keywords, Go Here",
+          "author": "Michael Arakilian",
+          "styles": [
+            "../assets/css/style.css"
+          ],
+          "scripts": [
+            "../assets/js/vue/vue.js",
+            "https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js",
+            "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js",
+            "../assets/js/main.js",
+            "../ezmoji.js"
+          ]
+        }
       }
     }
   }

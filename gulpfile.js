@@ -1,15 +1,20 @@
 var gulp = require('gulp'),
     rename = require("gulp-rename"),
     uglify = require('gulp-uglify'),
+    pug = require('gulp-pug'),
     csso = require('gulp-csso'),
     server = require('browser-sync'),
+    beautify = require('gulp-beautify'),
     package = require('./package.json'),
     pipeline = require('readable-stream').pipeline;
 
-var _start,
-    _compressez,
+var _compressez,
     _compressjs,
-    _compresscss;
+    _compresscss,
+    _buildhtml,
+    _clean,
+    _build,
+    _start;
 
 _start = (cb) => {
     server.init(package.config.browserSync);
@@ -41,9 +46,28 @@ _compresscss = (cb) => {
     gulp.src('./assets/css/style.css')
         .pipe(csso())
         .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('./assets/css'))
+        .pipe(gulp.dest('./assets/css'));
+    cb();
+};
+
+_buildhtml = (cb) => {
+    gulp.src('./src/index.pug')
+        .pipe(pug(package.config.pug.index))
+        .pipe(beautify.html())
+        .pipe(gulp.dest('./'));
+
+    gulp.src('./src/license/index.pug')
+        .pipe(pug(package.config.pug.license))
+        .pipe(beautify.html())
+        .pipe(gulp.dest('./license'));
+
+    gulp.src('./src/readme/index.pug')
+        .pipe(pug(package.config.pug.readme))
+        .pipe(beautify.html())
+        .pipe(gulp.dest('./readme'));
     cb()
 };
 
 exports.default = _start;
 exports.compress = gulp.series(_compresscss, _compressjs, _compressez);
+exports.build = _buildhtml;
