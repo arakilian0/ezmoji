@@ -62,6 +62,10 @@ npm run compress
 - Nature
     - octocat
     - squirrel
+- Symbols
+    - black_square
+    - white_square
+    - shipit
 
 ## **License**
 MIT License
