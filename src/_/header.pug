@@ -1,7 +1,14 @@
 header
   h1
-    a(href="/") :heart: Ezmoji
+    a(href="/") :purple_heart: Ezmoji
   nav
     input(type="text" placeholder="Search...")
-    a(href="/readme") Readme
-    a(href="/license") License
+    if page == 'how-to-use'
+      a(href="/how-to-use" class="active") How to Use
+    else 
+      a(href="/how-to-use") How to Use
+    if page == 'license'
+      a(href="/license" class="active") License
+    else 
+      a(href="/license") License
+    a(href="https://github.com/arakilian0/ezmoji" target="_blank") Fork Me

@@ -61,10 +61,10 @@ _buildhtml = (cb) => {
         .pipe(beautify.html())
         .pipe(gulp.dest('./license'));
 
-    gulp.src('./src/readme/index.pug')
-        .pipe(pug(package.config.pug.readme))
+    gulp.src('./src/how-to-use/index.pug')
+        .pipe(pug(package.config.pug.how_to_use))
         .pipe(beautify.html())
-        .pipe(gulp.dest('./readme'));
+        .pipe(gulp.dest('./how-to-use'));
     cb()
 };
 
