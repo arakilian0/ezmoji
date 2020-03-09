@@ -4,12 +4,12 @@ var ezmsg = '...';
 var ezmojis = [
 
     // People
-    { code: ':bowtie:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':bowtie:', emoji: ezmsg, group: 'People', available: false },
     { code: ':smile:', emoji: '😄', group: 'People' },
     { code: ':laughing:', emoji: '😆', group: 'People' },
     { code: ':blush:', emoji: '😊', group: 'People' },
     { code: ':smiley:', emoji: '😃', group: 'People' },
-    { code: ':relaxed:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':relaxed:', emoji: ezmsg, group: 'People', available: false },
     { code: ':smirk:', emoji: '😏', group: 'People' },
     { code: ':heart_eyes:', emoji: '😍', group: 'People' },
     { code: ':kissing_heart:', emoji: '😘', group: 'People' },
@@ -50,7 +50,7 @@ var ezmojis = [
     { code: ':joy:', emoji: '😂', group: 'People' },
     { code: ':astonished:', emoji: '😲', group: 'People' },
     { code: ':scream:', emoji: '😱', group: 'People' },
-    { code: ':neckbeard:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':neckbeard:', emoji: ezmsg, group: 'People', available: false },
     { code: ':tired_face:', emoji: '😫', group: 'People' },
     { code: ':angry:', emoji: '😠', group: 'People' },
     { code: ':rage:', emoji: '😡', group: 'People' },
@@ -139,7 +139,7 @@ var ezmojis = [
     { code: ':person_with_pouting_face:', emoji: '🙎', group: 'People' },
     { code: ':person_frowning:', emoji: '🙍', group: 'People' },
     { code: ':bow:', emoji: '🙇', group: 'People' },
-    { code: ':couplekiss:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':couplekiss:', emoji: ezmsg, group: 'People', available: false },
     { code: ':couple_with_heart:', emoji: '💑', group: 'People' },
     { code: ':massage:', emoji: '💆', group: 'People' },
     { code: ':haircut:', emoji: '💇', group: 'People' },
@@ -187,17 +187,17 @@ var ezmojis = [
     { code: ':busts_in_silhouette:', emoji: '👥', group: 'People' },
     { code: ':speech_balloon:', emoji: '💬', group: 'People' },
     { code: ':thought_balloon:', emoji: '💭', group: 'People' },
-    { code: ':feelsgood:', emoji: ezmsg, group: 'People', available: false },
-    { code: ':finnadie:', emoji: ezmsg, group: 'People', available: false },
-    { code: ':goberserk:', emoji: ezmsg, group: 'People', available: false },
-    { code: ':godmode:', emoji: ezmsg, group: 'People', available: false },
-    { code: ':hurtrealbad:', emoji: ezmsg, group: 'People', available: false },
-    { code: ':rage1:', emoji: ezmsg, group: 'People', available: false },
-    { code: ':rage2:', emoji: ezmsg, group: 'People', available: false },
-    { code: ':rage3:', emoji: ezmsg, group: 'People', available: false },
-    { code: ':rage4:', emoji: ezmsg, group: 'People', available: false },
-    { code: ':suspect:', emoji: ezmsg, group: 'People', available: false },
-    { code: ':trollface:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':feelsgood:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':finnadie:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':goberserk:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':godmode:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':hurtrealbad:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':rage1:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':rage2:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':rage3:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':rage4:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':suspect:', emoji: ezmsg, group: 'People', available: false },
+    // { code: ':trollface:', emoji: ezmsg, group: 'People', available: false },
 
     // Nature
     { code: ':sunny:', emoji: '☀️', group: 'Nature' },
@@ -313,8 +313,8 @@ var ezmojis = [
     { code: ':volcano:', emoji: '🌋', group: 'Nature' },
     { code: ':milky_way:', emoji: '🌌', group: 'Nature' },
     { code: ':partly_sunny:', emoji: '⛅️', group: 'Nature' },
-    { code: ':octocat:', emoji: ezmsg, group: 'Nature', available: false },
-    { code: ':squirrel:', emoji: ezmsg, group: 'Nature', available: false },
+    // { code: ':octocat:', emoji: ezmsg, group: 'Nature', available: false },
+    // { code: ':squirrel:', emoji: ezmsg, group: 'Nature', available: false },
 
     // Objects
     { code: ':bamboo:', emoji: '🎍', group: 'Objects' },
@@ -864,8 +864,8 @@ var ezmojis = [
     { code: ':wavy_dash:', emoji: '〰️', group: 'Symbols' },
     { code: ':part_alternation_mark:', emoji: '〽️', group: 'Symbols' },
     { code: ':trident:', emoji: '🔱', group: 'Symbols' },
-    { code: ':black_square:', emoji: ezmsg, group: 'Symbols', available: false },
-    { code: ':white_square:', emoji: ezmsg, group: 'Symbols', available: false },
+    // { code: ':black_square:', emoji: ezmsg, group: 'Symbols', available: false },
+    // { code: ':white_square:', emoji: ezmsg, group: 'Symbols', available: false },
     { code: ':white_check_mark:', emoji: '✅', group: 'Symbols' },
     { code: ':black_square_button:', emoji: '🔲', group: 'Symbols' },
     { code: ':white_square_button:', emoji: '🔳', group: 'Symbols' },
@@ -878,35 +878,15 @@ var ezmojis = [
     { code: ':small_blue_diamond:', emoji: '🔹', group: 'Symbols' },
     { code: ':small_orange_diamond:', emoji: '🔸', group: 'Symbols' },
     { code: ':small_red_triangle:', emoji: '🔺', group: 'Symbols' },
-    { code: ':small_red_triangle_down:', emoji: '🔻', group: 'Symbols' },
-    { code: ':shipit:', emoji: ezmsg, group: 'Symbols', available: false }
+    { code: ':small_red_triangle_down:', emoji: '🔻', group: 'Symbols' }
+    // { code: ':shipit:', emoji: ezmsg, group: 'Symbols', available: false }
 ];
 
 
 new Vue({
     el: '#app',
     data: {
-        test: 'hello world',
-        emojis: ezmojis
-    },
-    methods: {
-        doSomething: function() {
-            console.log(this.emojis);
-        }
+        emojis: ezmojis,
+        input: ''
     }
 });
-
-// var clipboard = new ClipboardJS('.copy-btn');
-//
-// clipboard.on('success', function(e) {
-//     console.info('Action:', e.action);
-//     console.info('Text:', e.text);
-//     console.info('Trigger:', e.trigger);
-//     Swal.fire({
-//         position: 'top-end',
-//         title: 'Copied ' + e.text,
-//         showConfirmButton: false,
-//         timer: 1500
-//       })
-//     e.clearSelection();
-// });

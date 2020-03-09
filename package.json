@@ -57,7 +57,7 @@
             "/assets/css/style.css"
           ],
           "scripts": [
-            "./assets/js/vue/vue.js",
+            "./assets/js/vue/vue.min.js",
             "./assets/js/main.js",
             "./ezmoji.js"
           ]
@@ -75,8 +75,7 @@
           ],
           "scripts": [
             "https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js",
-            "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js",
-            "../ezmoji.js"
+            "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"
           ]
         }
       },
@@ -92,8 +91,7 @@
           ],
           "scripts": [
             "https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js",
-            "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js",
-            "../ezmoji.js"
+            "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"
           ]
         }
       }
