@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+	head
+		include head.pug
+	body
+		div(id="app")
+			include header.pug
+			if page == 'index'
+				main(id="index-main")
+					block body
+			else
+				main
+					block body
+		each script in scripts
+			if script == 'https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js'
+				script(defer type="module" src=script)
+			else
+				script(defer src=script)
+				

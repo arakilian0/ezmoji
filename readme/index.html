@@ -17,31 +17,31 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="/">:heart: Ezmoji</a></h1>
-        <nav><input type="text" placeholder="Search..."><a href="/readme">Readme</a><a href="/license">License</a></nav>
-    </header>
-    <main>
-        <zero-md src="/README.md">
-            <template>
-                <style>
-                    * {
-                        color: #ccc !important;
-                    }
+    <div id="app">
+        <header>
+            <h1><a href="/">:heart: Ezmoji</a></h1>
+            <nav><input type="text" placeholder="Search..."><a href="/readme">Readme</a><a href="/license">License</a></nav>
+        </header>
+        <main>
+            <zero-md src="/README.md">
+                <template>
+                    <style>
+                        * {
+                            color: #ccc !important;
+                        }
 
-                    pre {
-                        background: var(--header);
-                        border-radius: 4px;
-                        padding: 10px 8px;
-                    }
-                </style>
-            </template>
-        </zero-md>
-    </main>
-    <script defer src="../assets/js/vue/vue.js"></script>
+                        pre {
+                            background: var(--header);
+                            border-radius: 4px;
+                            padding: 10px 8px;
+                        }
+                    </style>
+                </template>
+            </zero-md>
+        </main>
+    </div>
     <script defer src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
     <script defer type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
-    <script defer src="../assets/js/main.js"></script>
     <script defer src="../ezmoji.js"></script>
 </body>
 

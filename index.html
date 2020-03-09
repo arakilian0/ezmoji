@@ -17,13 +17,17 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="/">:heart: Ezmoji</a></h1>
-        <nav><input type="text" placeholder="Search..."><a href="/readme">Readme</a><a href="/license">License</a></nav>
-    </header>
-    <main>
-        <h1>Gulpify!</h1>
-    </main>
+    <div id="app">
+        <header>
+            <h1><a href="/">:heart: Ezmoji</a></h1>
+            <nav><input type="text" placeholder="Search..."><a href="/readme">Readme</a><a href="/license">License</a></nav>
+        </header>
+        <main id="index-main">
+            <ul id="emojis">
+                <li v-for="(emoji, idx) in emojis" v-if="emoji.available !== false">{{ emoji.emoji }}<span>{{ emoji.code.split(':')[1] }}</span></li>
+            </ul>
+        </main>
+    </div>
     <script defer src="./assets/js/vue/vue.js"></script>
     <script defer src="./assets/js/main.js"></script>
     <script defer src="./ezmoji.js"></script>

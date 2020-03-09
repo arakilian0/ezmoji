@@ -1,6 +1,6 @@
 {
   "name": "ezmoji",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "GitHub style emojis for HTML",
   "main": "",
   "scripts": {
@@ -48,6 +48,7 @@
     "pug": {
       "index": {
         "data": {
+          "page": "index",
           "title": "Ezmoji",
           "description": "something",
           "keywords": "Some, Keywords, Go Here",
@@ -72,10 +73,8 @@
             "../assets/css/style.css"
           ],
           "scripts": [
-            "../assets/js/vue/vue.js",
             "https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js",
             "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js",
-            "../assets/js/main.js",
             "../ezmoji.js"
           ]
         }
@@ -90,10 +89,8 @@
             "../assets/css/style.css"
           ],
           "scripts": [
-            "../assets/js/vue/vue.js",
             "https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js",
             "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js",
-            "../assets/js/main.js",
             "../ezmoji.js"
           ]
         }
