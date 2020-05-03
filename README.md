@@ -17,7 +17,7 @@
     <h1>:smile: Hello World</h1>
 <div>
 ```
-The code above would become the following:
+The code above would render as:
 ```html
 <div>
     <h1>😄 Hello World</h1>
