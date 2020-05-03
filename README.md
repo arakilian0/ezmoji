@@ -1,5 +1,6 @@
 # ezmoji
-### GitHub style [:emojis:](https://gist.github.com/rxaviers/7360908) for HTML
+
+**GitHub style [:emojis:](https://gist.github.com/rxaviers/7360908) for HTML.**
 
 ## **Install**
 ```html
@@ -36,9 +37,6 @@ npm install
 ```
 ```
 npm run start
-```
-```
-npm run compress
 ```
 
 ## **Note**
