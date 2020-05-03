@@ -1,8 +1,4 @@
-"use strict";
-
-var ezmsg = '...';
-var ezmojis = [
-
+var emojis = [
     // People
     // { code: ':bowtie:', emoji: ezmsg, group: 'People', available: false },
     { code: ':smile:', emoji: '😄', group: 'People' },
@@ -886,7 +882,7 @@ var ezmojis = [
 new Vue({
     el: '#app',
     data: {
-        emojis: ezmojis,
+        emojis: emojis,
         input: ''
     }
 });
