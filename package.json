@@ -1,6 +1,6 @@
 {
   "name": "ezmoji",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "GitHub style emojis for HTML",
   "main": "",
   "scripts": {
@@ -36,7 +36,7 @@
       "server": "./",
       "open": true,
       "notify": false,
-      "logPrefix": "ezmoji v0.4.0",
+      "logPrefix": "ezmoji v0.6.0",
       "logLevel": "debug",
       "logFileChanges": true,
       "logConnections": true,
