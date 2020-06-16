@@ -1,8 +1,0 @@
-extends ./_/template.pug
-block body
-	ul(id="emojis")
-		li(
-			v-for="(emoji, idx) in emojis"
-			v-if="emoji.available !== false") 
-			template {{ emoji.emoji }}
-				span {{ emoji.code.split(':')[1] }}
