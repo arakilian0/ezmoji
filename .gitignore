@@ -1,4 +1,5 @@
-tmp/
-.vscode/
-node_modules/
+tmp
+.next
+.vscode
+node_modules
 package-lock.json
