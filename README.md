@@ -1,5 +1,4 @@
 ## [ezmoji](https://github.com/arakilian0/ezmoji)
-<!-- ![Alt text](/screenshot.jpg "a title") -->
 ***💤 easy html emojis for the web***
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/arakilian0/ezmoji) [![GitHub release](https://img.shields.io/github/release/arakilian0/ezmoji.svg)](https://github.com/arakilian0/ezmoji/releases/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/arakilian0/ezmoji/blob/master/LICENSE) 
