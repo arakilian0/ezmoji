@@ -1,0 +1,37 @@
+:root {
+    --color-primary: #FFEF34;
+    --color-secondary: #C8A51C;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    --font-primary: 'Readex Pro', sans-serif;
+
+    --padding-small: 12px;
+    --padding-medium: 30px;
+    --padding-large: 60px;
+
+    --border: 4px solid;
+    --border-m: 3px solid;
+
+    --link-size: 24px;
+    --link-weight: 400;
+    --link-size-m: 18px;
+
+    --animation-speed1: 500ms;
+    --animation-link-start: 14px;
+    --animation-link-start-m: 12px;
+    --animation-link-end: 131%;
+
+    --header-level: 160px;
+    --header-level-m: 95px;
+
+    --nav-leveler: 65px;
+    --nav-leveler-m: 37px;
+    --search-leveler: -5px;
+
+    --searchbar-width: 200px;
+    --searchbar-fontsize: 18px;
+
+    --logo-size: 100px;
+    --logo-size-mobile: 65px;
+}

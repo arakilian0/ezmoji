@@ -1,0 +1,20 @@
+.hide { display: none !important }
+.flex { display: flex !important }
+.wrap { flex-wrap: wrap !important }
+.between { justify-content: space-between }
+.center { align-items: center }
+.bottom { align-items: bottom }
+
+.primary { background: var(--color-primary) }
+.secondary { background: var(--color-secondary) }
+.white { background: var(--color-white) }
+.black { background: var(--color-black) }
+
+.text-primary { color: var(--color-primary) }
+.text-secondary { color: var(--color-secondary) }
+.text-white { color: var(--color-white) }
+.text-black { color: var(--color-black) }
+
+.pd-sm { padding: var(--padding-small) }
+.pd-md { padding: var(--padding-medium) }
+.pd-lg { padding: var(--padding-large) }

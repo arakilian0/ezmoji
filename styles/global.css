@@ -1,0 +1,238 @@
+body {
+    font-family: var(--font-primary);
+    overflow-x: hidden;
+}
+
+header {
+    border-bottom: var(--border) var(--color-black);
+}
+
+nav { margin-top: var(--nav-leveler) }
+
+.link {
+    color: var(--color-black);
+    font-size: var(--link-size);
+    padding: 0 var(--padding-medium) 0 var(--padding-medium);
+    font-weight: var(--link-weight);
+}
+
+.link-highlight {
+    display: inline-block;
+    color: #343434;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+}
+
+.link-highlight::after {
+    position: absolute;
+    z-index: -1;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 100%;
+    height: var(--animation-link-start);
+    background-color: var(--color-primary);
+    transition: all var(--animation-speed1);
+}
+
+.link-highlight:hover::after {
+    height: var(--animation-link-end);
+    width: 105%;
+}
+
+.logo {
+    width: var(--logo-size);
+    height: var(--logo-size);
+    margin-right: var(--padding-medium);
+}
+
+.searchbar {
+    margin-top: var(--search-leveler);
+    width: var(--searchbar-width);
+    outline: none;
+    border: none;
+    padding: var(--padding-small);
+    padding-right: var(--padding-large);
+    border-bottom: var(--border-m) var(--color-black);
+    font-family: var(--font-primary);
+    font-size: var(--searchbar-fontsize);
+}
+
+.search-icon {
+    height: 41px;
+    position: relative;
+    top: 41px;
+    left: 155px;
+    cursor: pointer;
+}
+
+.leveler {
+    position: absolute;
+    top: var(--header-level);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: var(--color-white);
+    display: none;
+}
+
+.body-text {
+    text-transform: lowercase;
+    margin-bottom: var(--padding-large);
+}
+
+.body-text-pt1 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-right: var(--padding-small);
+}
+
+.body-text-pt2, 
+.body-text-pt2-m {
+    line-height: 26px;
+    font-size: 18px;
+    color: var(--color-black);
+    opacity: .75;
+}
+
+.body-text-pt2-m { font-size: 15px }
+
+.content { padding: var(--padding-large) }
+
+.ezmojis {
+    margin-top: var(--padding-medium);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--padding-large);
+}
+
+.card {
+    padding: var(--padding-medium);
+    outline: 6px solid var(--color-black);
+    flex-basis: 17%;
+    text-align: center;
+    font-size: 64px;
+    margin: 0 0 var(--padding-small) 0;
+    cursor: pointer;
+}
+
+.card-highlight {
+    display: inline-block;
+    color: #343434;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+}
+
+.card-highlight::after {
+    position: absolute;
+    z-index: -1;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 100%;
+    height: var(--animation-link-start);
+    background-color: var(--color-primary);
+    transition: all var(--animation-speed1);
+}
+
+.card-highlight:hover::after {
+    height: 40%;
+    width: 105%;
+}
+
+.card-text {
+    font-size: 20px;
+    font-weight: 500 !important;
+    color: var(--color-black);
+}
+
+.alert-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding-top: var(--padding-medium);
+}
+
+.alert {
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-small);
+    border: var(--border-m) var(--color-black);
+    width: 320px;
+    margin: 0 auto;
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 500;
+
+    -moz-animation: alertAnimation 0s ease-out 1s forwards;
+    /* Firefox */
+    -webkit-animation: alertAnimation 0s ease-out 1s forwards;
+    /* Safari and Chrome */
+    -o-animation: alertAnimation 0s ease-out 1s forwards;
+    /* Opera */
+    animation: alertAnimation 0s ease-out 1s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.alert-close {
+    margin-left: 20px;
+}
+
+#markdown h1 { font-size: 42px }
+#markdown h2 { font-size: 36px }
+#markdown h3 { font-size: 28px }
+#markdown h4 { font-size: 20px }
+#markdown p { 
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#markdown h3,
+#markdown h4 { 
+    margin: 20px 0;
+}
+
+#markdown p, pre, ul { 
+    padding: 20px 0;
+}
+
+#markdown ul { 
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#markdown li { 
+    padding: 20px;
+    font-weight: 300;
+}
+
+#markdown pre { 
+    overflow-x: scroll;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: var(--padding-small);
+    margin: var(--padding-medium) 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#markdown #markdown-img img {
+    width: 100%;
+}
+
+#markdown a { color: var(--color-secondary) }
