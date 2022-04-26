@@ -6,16 +6,9 @@ function Layout({ children }) {
         <>
             <Header />
             <main className="content">
-                <motion.div 
-                    initial="pageInitial" 
-                    animate="pageAnimate" 
-                    transition={{ duration: 0.75 }} 
-                    variants={{
-                        pageInitial: { x: 200 },
-                        pageAnimate: { x: 0 }
-                }}>
+                <div>
                     {children}
-                </motion.div>
+                </div>
             </main>
         </>
     )
