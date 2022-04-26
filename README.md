@@ -19,12 +19,12 @@ Some challanges to tackle for ezmoji would be:
 ### How do you use ezmoji?
 At the current state of the project, simply copy-and-paste. There are only 2 files in this repo that work
 towards serving Emojis.
-- [`ezmoji.js`*(required)*](https://github.com/arakilian0/ezmoji)
+- [`ezmoji.js`*(required)*](https://github.com/arakilian0/ezmoji/blob/master/ezmoji.js)
 Re-writing for use with front-end frameworks. Currently only functional if the `window` object exists. For example Vanilla JS, jQuery etc.
-- [`ezmoji.json`*(optional)*](https://github.com/arakilian0/ezmoji)
+- [`ezmoji.json`*(optional)*](https://github.com/arakilian0/ezmoji/blob/master/ezmoji.json)
 The list of all available Emojis in ezmoji. You can use this JSON file along with a custom script in a front-end framework like React or Vue to achieve the same as ezmoji.js.
 
-Check out [example.html](https://github.com/arakilian0/ezmoji) to see how you can use ezmoji in your project.
+Check out [example.html](https://github.com/arakilian0/ezmoji/blob/master/example.html) to see how you can use ezmoji in your project.
 ```html
 <-- example.html -->
 
@@ -37,7 +37,7 @@ Check out [example.html](https://github.com/arakilian0/ezmoji) to see how you ca
 </script>
 ```
 
-### License
+### [License](https://github.com/arakilian0/ezmoji/blob/master/LICENSE)
 MIT License
 
 Copyright (c) 2019 Michael Arakilian
