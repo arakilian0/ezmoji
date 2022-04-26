@@ -47,8 +47,8 @@ function HomePage() {
                 animate="pageAnimate" 
                 transition={{ duration: 0.75 }} 
                 variants={{
-                    pageInitial: { x: 200 },
-                    pageAnimate: { x: 0 }
+                    pageInitial: { opacity: 0 },
+                    pageAnimate: { opacity: 1 }
             }}>
                 <div>
                     <p className="body-text">
@@ -58,32 +58,32 @@ function HomePage() {
                         <span className="body-text-pt2-m hide"> (Click an emoji to copy it)</span>
                     </p>
                 </div>
+                <div className="ezmojis">
+                    <ul className="cards flex center wrap">
+                        {ezmojis.filter(ez => {
+                            if(query === null) return ez
+                            else {
+                                let newCode = ez.code.replaceAll(':', '')
+                                newCode = newCode.replaceAll('_', '')
+                                
+                                if(newCode.includes(query.toLowerCase())) { return ez }
+                            }
+                        }).map(ez => {
+                            return(
+                                <li 
+                                    onClick={copyEmoji}
+                                    className="card card-highlight" 
+                                    key={ez.code}>
+                                        {ez.emoji}
+                                        <br />
+                                        <span className="card-text">{ez.code}</span>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
+                <Alert />
             </motion.div>
-            <div className="ezmojis">
-                <ul className="cards flex center wrap">
-                    {ezmojis.filter(ez => {
-                        if(query === null) return ez
-                        else {
-                            let newCode = ez.code.replaceAll(':', '')
-                            newCode = newCode.replaceAll('_', '')
-                            
-                            if(newCode.includes(query.toLowerCase())) { return ez }
-                        }
-                    }).map(ez => {
-                        return(
-                            <li 
-                                onClick={copyEmoji}
-                                className="card card-highlight" 
-                                key={ez.code}>
-                                    {ez.emoji}
-                                    <br />
-                                    <span className="card-text">{ez.code}</span>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </div>
-            <Alert />
         </div>
     )
 }

@@ -37,8 +37,8 @@ function READMEPage() {
                 animate="pageAnimate" 
                 transition={{ duration: 0.75 }} 
                 variants={{
-                    pageInitial: { x: 200 },
-                    pageAnimate: { x: 0 }
+                    pageInitial: { opacity: 0 },
+                    pageAnimate: { opacity: 1 }
             }}>
             </motion.div>
         </div>
