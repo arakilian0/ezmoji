@@ -1,11 +1,13 @@
 {
   "name": "ezmoji",
-  "version": "0.6.0",
-  "description": "GitHub style emojis for HTML",
+  "version": "0.7.0",
+  "description": "Emojis in the browser.",
   "main": "",
   "scripts": {
-    "start": "gulp",
-    "compress": "gulp compress"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -13,7 +15,7 @@
   },
   "keywords": [
     "html",
-    "emojis"
+    "emoji"
   ],
   "author": "Michael Arakilian",
   "license": "MIT",
@@ -21,80 +23,13 @@
     "url": "https://github.com/arakilian0/ezmoji/issues"
   },
   "homepage": "https://github.com/arakilian0/ezmoji#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-beautify": "^3.0.0",
-    "gulp-csso": "^4.0.1",
-    "gulp-pug": "^4.0.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-uglify": "^3.0.2",
-    "readable-stream": "^3.6.0"
-  },
-  "config": {
-    "browserSync": {
-      "server": "./",
-      "open": true,
-      "notify": false,
-      "logPrefix": "ezmoji v0.6.0",
-      "logLevel": "debug",
-      "logFileChanges": true,
-      "logConnections": true,
-      "port": 3000,
-      "ui": {
-        "port": 3030
-      }
-    },
-    "pug": {
-      "index": {
-        "data": {
-          "page": "index",
-          "title": "Ezmoji",
-          "description": "something",
-          "keywords": "Some, Keywords, Go Here",
-          "author": "Michael Arakilian",
-          "styles": [
-            "/assets/css/style.css"
-          ],
-          "scripts": [
-            "./assets/js/vue/vue.min.js",
-            "./assets/js/main.js",
-            "./ezmoji.js"
-          ]
-        }
-      },
-      "license": {
-        "data": {
-          "page": "license",
-          "title": "Ezmoji License",
-          "description": "something",
-          "keywords": "Some, Keywords, Go Here",
-          "author": "Michael Arakilian",
-          "styles": [
-            "../assets/css/style.css"
-          ],
-          "scripts": [
-            "https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js",
-            "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"
-          ]
-        }
-      },
-      "how_to_use": {
-        "data": {
-          "page": "how-to-use",
-          "title": "Ezmoji Readme",
-          "description": "something",
-          "keywords": "Some, Keywords, Go Here",
-          "author": "Michael Arakilian",
-          "styles": [
-            "../assets/css/style.css"
-          ],
-          "scripts": [
-            "https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js",
-            "https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"
-          ]
-        }
-      }
-    }
+  "dependencies": {
+    "dompurify": "^2.3.6",
+    "framer-motion": "^6.3.1",
+    "isomorphic-dompurify": "^0.18.0",
+    "marked": "^4.0.14",
+    "next": "^12.1.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
