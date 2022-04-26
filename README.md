@@ -3,7 +3,7 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/arakilian0/ezmoji) [![GitHub release](https://img.shields.io/github/release/arakilian0/ezmoji.svg)](https://github.com/arakilian0/ezmoji/releases/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/arakilian0/ezmoji/blob/master/LICENSE) 
 
-[![Alt text](https://raw.githubusercontent.com/arakilian0/ezmoji/master/screenshot.jpg)](https://github.com/arakilian0/ezmoji)
+<span id="markdown-img">[![Alt text](https://raw.githubusercontent.com/arakilian0/ezmoji/master/screenshot.jpg)](https://github.com/arakilian0/ezmoji)</span>
 
 ### What is ezmoji?
 ezmoji aims to be a consistent API for [Unicode](https://en.wikipedia.org/wiki/Unicode) Emojis. The project sprung from the need of a Web based Emoji API. The requirements didn't include all possible Emojis, however one of the requirements was plug-and-play. At first I was using [emoji-css](https://github.com/afeld/emoji-css/) and that did the job but it wasn't my desired solution.
