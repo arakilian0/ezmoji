@@ -4,11 +4,15 @@ import { marked } from 'marked'
 import DOMPurify from 'isomorphic-dompurify'
 
 const headProps = {
-    title: "README",
-    description: "asdasd",
+    title: "README - ezmoji",
+    description: "ezmoji aims to be a consistent API for Unicode Emojis. The project sprung from the need of a Web based Emoji API.",
     keywords: [
-        "asdasd",
-        "ssssss"
+        "ezmoji",
+        "html",
+        "javascript",
+        "emoji",
+        "api",
+        "unicode"
     ]
 }
 
