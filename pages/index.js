@@ -5,11 +5,15 @@ import ezmoji from '../ezmoji.json'
 import { useSearch } from '../context/Search'
 
 const headProps = {
-    title: "Index",
-    description: "asdasd",
+    title: "HTML Emojis for the Web - ezmoji",
+    description: "ezmoji aims to be a consistent API for Unicode Emojis. The project sprung from the need of a Web based Emoji API.",
     keywords: [
-        "asdasd",
-        "ssssss"
+        "ezmoji",
+        "html",
+        "javascript",
+        "emoji",
+        "api",
+        "unicode"
     ]
 }
 
